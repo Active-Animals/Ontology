@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/actan
+
+idspace: ACTAN
+base_url: /obo/actan
+
+products:
+- actan.owl: https://raw.githubusercontent.com/Active-Animals/Ontology/main/actan.owl
+- actan.obo: https://raw.githubusercontent.com/Active-Animals/Ontology/main/actan.obo
+
+term_browser: ontobee
+example_terms:
+- ACTAN_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/Active-Animals/Ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/Active-Animals/Ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/ACTAN?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/Active-Animals/Ontology/main/
+
