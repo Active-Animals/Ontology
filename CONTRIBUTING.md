@@ -1,4 +1,4 @@
-# Contributing to Active Animal Behavior Ontology
+# Contributing to Active Animals Behaviour Ontology
 
 :+1: First of all: Thank you for taking the time to contribute!
 

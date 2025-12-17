@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: actan
-title: Active Animal Behavior Ontology
+title: AActive Animals Behaviour Ontology
 jobs:
   - id: https://travis-ci.org/Active-Animals/Ontology
     type: travis-ci
@@ -13,7 +13,7 @@ contact:
   email: 
   label: 
   github: 
-description: Active Animal Behavior Ontology is an ontology...
+description: Active Animals Behaviour Ontology is an ontology...
 domain: stuff
 homepage: https://github.com/Active-Animals/Ontology
 products:

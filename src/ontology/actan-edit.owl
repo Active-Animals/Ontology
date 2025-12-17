@@ -13,7 +13,7 @@ Import(<http://purl.obolibrary.org/obo/actan/components/actan-webprotege.owl>)
 Import(<http://purl.obolibrary.org/obo/actan/imports/merged_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
-Annotation(dcterms:title "Active Animal Behavior Ontology")
+Annotation(dcterms:title "Active Animals Behaviour Ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/ACTAN_0000000>))
 Declaration(AnnotationProperty(dcterms:description))
