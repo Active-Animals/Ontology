@@ -1,0 +1,43 @@
+pattern_name: locomotion_by_mode
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/locomotion_by_mode
+
+description: >-
+  A specific type of locomotion that is characterized by a particular
+  locomotor mode (the environmental medium or substrate used for travel).
+  This pattern captures locomotion types like flying (aerial), swimming
+  (aquatic), walking (substratal), or burrowing (fossorial).
+
+  Examples:
+  - flying: locomotion that has part 'aerial' locomotor mode
+  - swimming: locomotion that has part 'aquatic' locomotor mode
+  - walking: locomotion that has part 'substratal' locomotor mode
+  - climbing: locomotion that realizes 'suspended' mode
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+
+classes:
+  locomotion: ACTAN:0000178
+  behavioural_mode: ACTAN:0000179
+
+relations:
+  has_part: BFO:0000051
+
+vars:
+  locomotor_mode: "'behavioural_mode'"
+
+name:
+  text: "%s locomotion"
+  vars:
+    - locomotor_mode
+
+def:
+  text: "Locomotion characterized by %s mode."
+  vars:
+    - locomotor_mode
+
+equivalentTo:
+  text: "'locomotion' and 'has_part' some %s"
+  vars:
+    - locomotor_mode
