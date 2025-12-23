@@ -3,20 +3,17 @@ pattern_name: behaviour_realizes_disposition
 pattern_iri: https://github.com/Active-Animals/Ontology/patterns/behaviour_realizes_disposition
 
 description: >-
-  A behaviour that realizes a specific disposition, state, or function.
-  This pattern captures behaviours defined by what they realize, such as
-  defensive behaviours realizing defense, locomotor behaviours realizing
-  locomotion states, or activities realizing specific functions.
+  A behaviour that realizes specific dispositions.
+  This pattern captures behaviours defined only by what they realize, such as   aggregating realizing a collective form of motion, activity realizing a repertoire, or locomotion realizing a specific environment-related mode.
 
   Examples:
-  - swarming: aggregating that realizes 'emergent' and 'disordered'
-  - postural: positional that realizes 'stationary'
-  - locomotor: positional that realizes 'state'
-  - envenoming: secreting that realizes 'inflexible' (fixed action pattern)
-  - balling: lying that realizes 'defense'
+  - aerial-planktonic kinetics: activity that realizes the 'aerial' mode
+  - swarming: aggregating that realizes an 'emergent' repertoire and a 'disordered' form of collective-motion
+  - posture: positioning that realizes a 'reduced-activity' repertoire
 
 contributors:
   - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
 
 classes:
   behaviour: ACTAN:0000002
