@@ -6,7 +6,7 @@ description: >-
   This pattern captures locomotion and posture (i.e. positioning) activities, defined only by the positional mode they realize.
 
   Examples:
-  - 'swimming locomotion': 'locomotion positioning' that realizes the aquatic type of 'positional mode'
+  - swimming locomotion: locomotion positioning that realizes the 'aquatic' type of positional mode
 
 contributors:
   - https://orcid.org/0000-0002-6601-2165
