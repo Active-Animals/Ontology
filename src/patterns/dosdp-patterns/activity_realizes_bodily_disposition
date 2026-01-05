@@ -14,15 +14,15 @@ contributors:
   - https://orcid.org/0000-0002-4277-2151
 
 classes:
-  behaviour: ACTAN:0000002
-  disposition: BFO:0000016
+  activity_behaviour: ACTAN:0000078
+  bodily_disposition: MF:0000032
 
 relations:
   realizes: BFO:0000055
 
 vars:
-  parent_behaviour: "'behaviour'"
-  realized_disposition: "'disposition'"
+  parent_behaviour: "''activity_behaviour''"
+  realized_disposition: "'bodily_disposition'"
 
 name:
   text: "%s"
@@ -30,7 +30,7 @@ name:
     - parent_behaviour
 
 def:
-  text: "%s that realizes %s."
+  text: "%s that realizes the %s."
   vars:
     - parent_behaviour
     - realized_disposition
