@@ -1,9 +1,9 @@
-pattern_name: positioning_from_kinetics
+pattern_name: posture
 
-pattern_iri: https://github.com/Active-Animals/Ontology/patterns/positioning_from_kinetics
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/posture
 
 description: >-
-  This pattern captures locomotion and posture (i.e. positioning) activities, defined both by the positional mode they realize, and by the particular kinetic activities that are involved.
+  This pattern captures posture activities, defined by the positional modes and regimes that they realize, supplemented by the particular kinetic activities that are involved.
 
   Examples:
   - hanging posture: posture positioning that realizes the 'suspensory' type of positional mode, and uses 'gripping' kinetics
