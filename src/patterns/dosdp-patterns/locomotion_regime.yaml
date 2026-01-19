@@ -1,12 +1,13 @@
-pattern_name: gait
+pattern_name: locomotion_regime
 
-pattern_iri: https://github.com/Active-Animals/Ontology/patterns/gait
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/locomotion_regime
 
 description: >-
-  This pattern captures locomotion activities, defined by the pedestrian modes and gait patterns that they realize, supplemented by the particular kinematic and kinetic activities that are involved.
+  This pattern captures locomotion activities, defined by the regime that they realize, along with the particular kinetic activities that are involved, and the form of switching behaviour used.
 
   Examples:
-  - anguilliform-gait: BCF swimming that realizes a limbless, aquatic lateral undulating gait pattern, by using a bending movement with added-mass push
+  - burst-coast-regime: swimming that realizes an 'intermittent' locomotion regime, by using sprinting and coasting with 'phased' switching
+  - take-off-regime: transitioning that realizes a 'transitional' regime, by using launch-thrust with 'transition' switching
 
 contributors:
   - https://orcid.org/0000-0002-6601-2165
@@ -14,41 +15,37 @@ contributors:
 
 classes:
   locomotion_positioning: ACTAN:0000176
-  pedestrian_mode: ACTAN:0000051
-  gait_pattern: ACTAN:0000126
-  kinematics_activity: ACTAN:0000747
+  regime: ACTAN:0000064
   kinetics_activity: ACTAN:0000147
+  switching_behaviour: ACTAN:0000541
 
 relations:
   realizes: BFO:0000055
   has_part: BFO:0000051
 
 vars:
-  gait: "''locomotion_positioning''"
-  pedestrian_disposition: "'positional_mode'"
-  realized_pattern: "'gait_pattern'"
-  kinematics: "'kinematics_activity'"
+  locomotion: "''locomotion_positioning''"
+  realized_regime: "'regime'"
   kinetics: "'kinetics_activity'"
+  switching: "'switching_behaviour'"
 
 name:
   text: "%s"
   vars:
-    - gait
+    - locomotion
 
 def:
-  text: "%s that realizes a(n) %s, %s pattern, by using a(n) %s with %s."
+  text: "%s that realizes a(n) %s, by using %s with %s."
   vars:
-    - gait
-    - pedestrian_disposition
-    - positional_disposition
+    - locomotion
+    - realized_regime
     - kinematics
-    - kinetics
+    - switching
 
 equivalentTo:
-  text: "%s and 'realizes' some %s and 'realizes' some %s and 'has_part' some %s and 'has_part' some %s"
+  text: "%s and 'realizes' some %s and 'has_part' some %s and 'has_part' some %s"
   vars:
-    - gait
-    - pedestrian_disposition
-    - positional_disposition
+    - locomotion
+    - realized_regime
     - kinematics
-    - kinetics
+    - switching
