@@ -6,9 +6,9 @@ description: >-
  This pattern captures technical activities (including tool use), defined by the kinetic activities that operate along with the material entities involved.
 
   Examples:
-  - kinematic activity: has participant 'anatomical entity' (general)
-  - kinetic activity: has participant 'anatomical entity'
-  - stepping: traversing that has participant 'appendage'
+  - attaching: constructing that uses adherence and involves an environmental material
+  - decorating: object-placing that uses lifting and involves an environmental material
+  - wiping-with-object: tooling that uses wiping and involves an environmental material
 
 contributors:
   - https://orcid.org/0000-0002-6601-2165
@@ -33,7 +33,7 @@ name:
     - technical_act
 
 def:
-  text: "%s using %s and involves a/an %s."
+  text: "%s that uses %s and involves a/an %s."
   vars:
     - technical_act
     - kinetics
