@@ -23,7 +23,7 @@ relations:
 
 vars:
   movement: "'movement_kinematics'"
-  movement_quality: "'quality'"
+  quality: "'quality'"
 
 name:
   text: "%s"
@@ -34,10 +34,10 @@ def:
   text: "%s that has a/an %s quality."
   vars:
     - movement
-    - movement_quality
+    - quality
 
 equivalentTo:
   text: "%s and 'has_quality' some %s"
   vars:
     - movement
-    - movement_quality
+    - quality
