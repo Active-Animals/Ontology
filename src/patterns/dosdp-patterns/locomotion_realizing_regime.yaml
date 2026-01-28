@@ -3,11 +3,11 @@ pattern_name: locomotion_realizing_regime
 pattern_iri: https://github.com/Active-Animals/Ontology/patterns/locomotion_realizing_regime
 
 description: >-
-  This pattern captures locomotion activities, defined by the regime that they realize, along with the particular kinetic activities that are involved, and the form of switching behaviour used.
+  This pattern captures locomotion activities, defined by the regime and form of behaviour switching that they realize, along with the particular kinetic activities that are involved.
 
   Examples:
-  - burst-coast-regime: swimming that realizes an 'intermittent' locomotion regime, by using sprinting and coasting with 'phased' switching
-  - take-off-regime: transitioning that realizes a 'transitional' regime, by using launch-thrust with 'transition' switching
+  - burst-coast-regime: swimming that realizes an 'intermittent' locomotion regime and 'phased' switching, by using sprinting and coasting
+  - take-off-regime: transitioning that realizes a 'transitional' regime and 'transition' switching, by using launch-thrust
 
 contributors:
   - https://orcid.org/0000-0002-6601-2165
@@ -16,8 +16,8 @@ contributors:
 classes:
   locomotion_positioning: ACTAN:0000176
   regime: ACTAN:0000064
+  switching_mode: ACTAN:0000541
   kinetics_activity: ACTAN:0000147
-  switching_behaviour: ACTAN:0000541
 
 relations:
   realizes: BFO:0000055
@@ -26,8 +26,8 @@ relations:
 vars:
   locomotion: "''locomotion_positioning''"
   realized_regime: "'regime'"
+  switching: "'switching_mode'"
   kinetics: "'kinetics_activity'"
-  switching: "'switching_behaviour'"
 
 name:
   text: "%s"
@@ -35,17 +35,17 @@ name:
     - locomotion
 
 def:
-  text: "%s that realizes a(n) %s, by using %s with %s."
+  text: "%s that realizes a(n) %s regime and a/an %s switching mode, by using %s."
   vars:
     - locomotion
     - realized_regime
-    - kinematics
     - switching
+    - kinematics
 
 equivalentTo:
-  text: "%s and 'realizes' some %s and 'has_part' some %s and 'has_part' some %s"
+  text: "%s and 'realizes' some %s and 'realizes' some %s and 'has_part' some %s"
   vars:
     - locomotion
     - realized_regime
-    - kinematics
     - switching
+    - kinematics
